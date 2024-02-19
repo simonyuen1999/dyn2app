@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
+```
+ng new dyn-app2
+cd dyn-app2
+ng generate application tch
+ng generate application eft
+yarn install
+```
+> All are CSS and No for SSR.
+
+Update `.gitignore` to ignore `yarn.lock` and `package-lock.json` file.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
