@@ -1,6 +1,6 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { appConfig } from './eft/eft.config';
+import { EftComponent } from './eft/eft.component';
 
-bootstrapApplication(AppComponent, appConfig)
+bootstrapApplication(EftComponent, appConfig)
   .catch((err) => console.error(err));
