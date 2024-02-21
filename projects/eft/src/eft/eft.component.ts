@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'eft-root',
@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class EftComponent {
   title = 'eft app and eft component';
+
+  @Input() uid:  string = 'eft_uid';
+  @Input() perm: string = 'eft---';
+
+  constructor() {
+    console.log('EftComponent ctor() uid = ' + this.uid);
+  }
 }

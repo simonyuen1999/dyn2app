@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "build-projects": "ng build tch --output-hashing=none && ng build eft --output-hashing=none", 
+    "build-projects": "ng build tch --output-hashing=bundles && ng build eft --output-hashing=bundles", 
+    "build-prog": "ng build --output-hashing=bundles",
     "build-hashnone": "ng build --output-hashing=none",
     "build-hash":     "ng build --output-hashing=bundles",
     "test": "ng test"

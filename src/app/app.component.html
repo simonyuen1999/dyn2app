@@ -1,11 +1,16 @@
 <h1>{{ title }}</h1>
-  
+
+  <p>Local variable: {{ user.uid }}, {{ user.perm }}</p>
+
   <hr>
   <ng-container *ngFor="let a_comp of components">
-      <ng-container *ngComponentOutlet="a_comp"></ng-container>
-    </ng-container>
+      <ng-container *ngComponentOutlet="a_comp; inputs: user"></ng-container>
+  </ng-container>
   <hr>
 
+  <button (click)="changeUserValue()">Change user value</button> &nbsp; &nbsp; 
+
   <button (click)="toggleComponent()">Toggle Component</button>
-  <ng-container *ngComponentOutlet="flip_comp"></ng-container> 
+    <ng-container *ngComponentOutlet="flip_comp; inputs: user"></ng-container>
+        
   <hr>

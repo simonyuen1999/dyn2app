@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'tch-root',
@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class TchComponent {
   title = 'tch app and tch component';
+
+  @Input() uid:  string = 'tch_uid';
+  @Input() perm: string = 'tch---';
+
+  constructor() {
+    console.log('TchComponent ctor() uid = ' + this.uid);
+  }
 }
